@@ -16,7 +16,7 @@
    [:h3 "About"]
    [:p "Martin Haesler is a former sales man for plumbing and heating projects, who after 17 years of working in this line of work, decided it was time for a change, see something of the world, and try for a completely different career path. Having always been interested in computer technology, an avid Linux user for many years, he decided on programming as a new career. Martin Haesler is quick to learn new things, self motivated and eager to improve."]])
 
-(defn personal-projects []
+(def personal-projects 
   [
    {:name "MetalHead"
     :url  "https://github.com/mswift42/MetalHead"
@@ -32,9 +32,9 @@
     :summary "go-beebster is a Web Gui frontend for <a href='https://github.com/get-iplayer/get-iplayer'>get-iplayer</a>. You can search for Iplayer programmes, either by name or category, see their description and download the programme. Beebster is implemented in Go, running the command line application get-iplayer in the background to search for the desired programme and info using regular expressions. It displays the results in the browser, showing a thumbnail and the programme's title. Downloading opens a gnome-terminal running the get-iplayer download command."}])
 
 (defn personalproject-element []
-  [:div.container
+  [:div.projects
    [:h3 "Personal Projects"]
-   (for [i (personal-projects)]
+   (for [i personal-projects]
      [:div.persprojelement
       [:div.projheader
        [:h4 (:name i)]]
@@ -43,4 +43,44 @@
       [:div.projimg
        [:img {:src (:pic i)}]]
       [:div.projsummary
-       [:p (:summary i)]]])])      
+       [:p (:summary i)]]])])
+
+(def work-experiences
+  [
+              {
+                  :comapny "Pfeiffer & May",
+                  :years  "2008 - 2012",
+                  :position  "Head of Heating Department",
+                  :worksummary "Supervising of team members. Negotiating prices and special deals with suppliers and customers. Developing weekly promotions for heating products. Determining of prices and conditions for our supplying of goods for bigger projects. Training and teaching of apprentices. Marketing of products utilising renewable energy. Compiling annual reports and goals for the following year."
+              },
+              {
+                 :comapny "Pfeiffer & May",
+                  :years   "1998 - 2006",
+                  :position  "Sales Team",
+                  :worksummary  "Supervising of team members. Handling of the demanding clients. Taking orders from our clients for daily deliveries. Making quick offers. Handling of complaints. Ordering of unusual products with our suppliers. Training and teaching of apprentices. Managing export business with customer in Taiwan, including handling of payment via letter of credit. Taking orders from our clients for daily or special deliveries. Inquiring of delivery dates. Handling of complaints. Ordering of goods with our suppliers by fax or telephone. Giving technical advise to our customers."
+              },
+              {
+ :company "Pfeiffer & May",
+                  :years  "1995 - 1998",
+                  :position  "Apprenticeship",
+                  :worksummary  "Apprenticeship with Pfeiffer & May. Graduated as Wholesale and Foreign Trade merchant."
+              }
+          ]
+  )
+
+(defn workexp-element []
+  [:div.workexpelement
+   [:h3 "Work Experience"]
+   (for [i work-experiences]
+     [:div.workexp
+      [:div.companyposition
+       [:div.company
+        [:h4 (:company i)]]
+       [:div.position
+        [:h4 (:position i)]]]
+      [:div.yearssummary
+       [:div.years
+        [:p (:years i)]]
+       [:div.summary
+        [:p (:worksummary i)]]]])])
+

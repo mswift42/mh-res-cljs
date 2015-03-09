@@ -12,15 +12,6 @@
 ;; -------------------------
 ;; Views
 
-;; (defn home-page []
-;;   [:div [:h2 "Welcome to webapp"]
-;;    [:div [:a {:href "#/about"} "go to about page"]]])
-
-;; (defn about-page []
-;;   [:div [:h2 "About mh-resume"]
-;;    [:div.aboutdesc
-;;     [:p "mobile friendly resume implemented using reagent / clojurescript."]]
-;;    [:div [:a {:href "#/"} "go to the home page"]]])
 
 (defn current-page []
   [:div [(session/get :current-page)]])

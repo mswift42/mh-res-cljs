@@ -89,17 +89,15 @@
    {
     :years "1993 - 1995",
     :schoolname "Berufskolleg II, Villingen-Schwenningen"
-    },
+    }
    {
     :years "1984 - 1993",
     :schoolname "Gymnasium, Villingen-Schwenningen"
-    },
+    }
    {
     :years "1980 - 1984",
     :schoolname "Elementary School, Villingen-Schwenningen"
-    }
-   ]
-  )
+    }])
 
 (defn education-element []
   [:div.education
@@ -110,4 +108,21 @@
        [:p (:years i)]]
       [:div.school
        [:p (:schoolname i)]]])])
+
+(def awards
+  [{
+    :year "2013"
+    :name "Certificate of Awesome"
+    :description "Certificate of Awesome, awarded for a notably superior achievement
+                  in the Lisp in Summer Projects 2013 Programming competition."}])
+
+(defn awards-element []
+  [:div.awards
+   [:h3 "Awards"]
+   (for [i awards]
+     [:div.awardcontainer
+      [:div.years
+       [:p (:year i)]]
+      [:div.awarddesc
+       [:p (:description i)]]])])
 

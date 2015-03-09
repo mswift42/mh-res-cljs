@@ -10,4 +10,5 @@
    (views/about-element)
    (views/personalproject-element)
    (views/workexp-element)
-   (views/education-element)])
+   (views/education-element)
+   (views/awards-element)])

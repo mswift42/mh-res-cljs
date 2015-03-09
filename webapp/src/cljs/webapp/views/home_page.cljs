@@ -7,4 +7,5 @@
   [:div.container
    (nav-bar "")
    (webapp.views.sections/contact-element)
-   (webapp.views.sections/about-element)])
+   (webapp.views.sections/about-element)
+   (webapp.views.sections/personalproject-element)])

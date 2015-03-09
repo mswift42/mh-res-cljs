@@ -10,3 +10,5 @@
    [:div.aboutdesc
     [:p "mobile friendly resume realized using reagent / clojurescript."]
     [:div [:a {:href "#/"} "go to home page"]]]])
+
+

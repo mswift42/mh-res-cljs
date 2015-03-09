@@ -47,25 +47,25 @@
 
 (def work-experiences
   [
-              {
-                  :comapny "Pfeiffer & May",
-                  :years  "2008 - 2012",
-                  :position  "Head of Heating Department",
-                  :worksummary "Supervising of team members. Negotiating prices and special deals with suppliers and customers. Developing weekly promotions for heating products. Determining of prices and conditions for our supplying of goods for bigger projects. Training and teaching of apprentices. Marketing of products utilising renewable energy. Compiling annual reports and goals for the following year."
-              },
-              {
-                 :comapny "Pfeiffer & May",
-                  :years   "1998 - 2006",
-                  :position  "Sales Team",
-                  :worksummary  "Supervising of team members. Handling of the demanding clients. Taking orders from our clients for daily deliveries. Making quick offers. Handling of complaints. Ordering of unusual products with our suppliers. Training and teaching of apprentices. Managing export business with customer in Taiwan, including handling of payment via letter of credit. Taking orders from our clients for daily or special deliveries. Inquiring of delivery dates. Handling of complaints. Ordering of goods with our suppliers by fax or telephone. Giving technical advise to our customers."
-              },
-              {
- :company "Pfeiffer & May",
-                  :years  "1995 - 1998",
-                  :position  "Apprenticeship",
-                  :worksummary  "Apprenticeship with Pfeiffer & May. Graduated as Wholesale and Foreign Trade merchant."
-              }
-          ]
+   {
+    :comapny "Pfeiffer & May",
+    :years  "2008 - 2012",
+    :position  "Head of Heating Department",
+    :worksummary "Supervising of team members. Negotiating prices and special deals with suppliers and customers. Developing weekly promotions for heating products. Determining of prices and conditions for our supplying of goods for bigger projects. Training and teaching of apprentices. Marketing of products utilising renewable energy. Compiling annual reports and goals for the following year."
+    },
+   {
+    :comapny "Pfeiffer & May",
+    :years   "1998 - 2006",
+    :position  "Sales Team",
+    :worksummary  "Supervising of team members. Handling of the demanding clients. Taking orders from our clients for daily deliveries. Making quick offers. Handling of complaints. Ordering of unusual products with our suppliers. Training and teaching of apprentices. Managing export business with customer in Taiwan, including handling of payment via letter of credit. Taking orders from our clients for daily or special deliveries. Inquiring of delivery dates. Handling of complaints. Ordering of goods with our suppliers by fax or telephone. Giving technical advise to our customers."
+    },
+   {
+    :company "Pfeiffer & May",
+    :years  "1995 - 1998",
+    :position  "Apprenticeship",
+    :worksummary  "Apprenticeship with Pfeiffer & May. Graduated as Wholesale and Foreign Trade merchant."
+    }
+   ]
   )
 
 (defn workexp-element []
@@ -83,4 +83,31 @@
         [:p (:years i)]]
        [:div.summary
         [:p (:worksummary i)]]]])])
+
+(def educations
+  [
+   {
+    :years "1993 - 1995",
+    :schoolname "Berufskolleg II, Villingen-Schwenningen"
+    },
+   {
+    :years "1984 - 1993",
+    :schoolname "Gymnasium, Villingen-Schwenningen"
+    },
+   {
+    :years "1980 - 1984",
+    :schoolname "Elementary School, Villingen-Schwenningen"
+    }
+   ]
+  )
+
+(defn education-element []
+  [:div.education
+   [:h3 "Education"]
+   (for [i educations]
+     [:div.educontainer
+      [:div.years
+       [:p (:years i)]]
+      [:div.school
+       [:p (:schoolname i)]]])])
 

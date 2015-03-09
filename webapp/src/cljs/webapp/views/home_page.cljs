@@ -9,4 +9,5 @@
    (views/contact-element)
    (views/about-element)
    (views/personalproject-element)
-   (views/workexp-element)])
+   (views/workexp-element)
+   (views/education-element)])

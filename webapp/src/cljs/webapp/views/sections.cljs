@@ -126,3 +126,33 @@
       [:div.awarddesc
        [:p (:description i)]]])])
 
+(def skills
+  [
+   {
+    :subsection"Programming Languages",
+    :skill ["Python","Go","Common Lisp", "Clojure",
+               "Javascript","Haskell", "Elisp", ]
+    },
+   {
+    :subsection"Web Development",
+    :skill ["Html","CSS", "Javascript","Dart",
+               "AngularJS", "ClojureScript"]
+    },
+   {
+   :subsection "Other",
+    :skill ["Linux", "Bash", "Latex", "Emacs", "Vim"]
+    }
+   ]
+  )
+
+(defn skill-element []
+  [:div.skillcontainer
+   [:h3 "Technical Skills"]
+   (for [i skills]
+     [:div#skillsection
+      [:div.skillheader
+       [:h4 (:subsection i)]]
+      [:div.skills
+       (for [s (:skill i)]
+         [:div.singleskill
+          [:span s]])]])])

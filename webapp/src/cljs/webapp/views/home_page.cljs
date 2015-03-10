@@ -6,10 +6,17 @@
 (defn home-page []
   [:div.container
    (nav-bar "")
-   (views/contact-element)
-   (views/about-element)
-   (views/personalproject-element)
-   (views/workexp-element)
-   (views/education-element)
-   (views/awards-element)
-   (views/skill-element)])
+   [:div.ressection
+    (views/contact-element)]
+   [:div.ressection
+    (views/about-element)]
+   [:div.ressection
+    (views/personalproject-element)]
+   [:div.ressection
+    (views/workexp-element)]
+   [:div.ressection
+    (views/education-element)]
+   [:div.ressection
+    (views/awards-element)]
+   [:div.ressection
+    (views/skill-element)]])

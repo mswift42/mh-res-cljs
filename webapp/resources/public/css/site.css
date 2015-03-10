@@ -32,3 +32,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.projimg > img {
+    width:40%;
+    margin:0 auto;
+}
+
+div.ressection {
+    max-width:70%;
+}

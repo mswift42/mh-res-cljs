@@ -41,3 +41,9 @@ a:hover {
 div.ressection {
     max-width:70%;
 }
+div.awardcontainer {
+    display:flex;
+    flex-direction:row;
+}
+div.years {
+    margin-right:2em;

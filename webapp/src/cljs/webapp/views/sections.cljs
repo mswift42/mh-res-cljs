@@ -45,6 +45,24 @@
       [:div.projsummary
        [:p (:summary i)]]])])
 
+(defn perscar []
+  [:div.carou
+   [:div#carousel-example-generic {:class "carousel slide" :data-ride "carousel"}
+    [:ol.carousel-indicators
+     [:li.active {:data-target "#carousel-example-generic" :data-slide-to "0"}]
+     [:li {:data-target "#carousel-example-generic" :data-slide-to "1"}]]
+    [:div.carousel-inner {:role "listbox"}3
+     [:div.item.active
+      [:img {:src "images/metalheadworld1.png"}]]
+     [:div.item
+      [:img {:src "images/metalheadworld2.png"}]]]
+    [:a.left.carousel-control {:href "#carousel-example-generic" :role "button" :data-slide "prev"}
+     [:span.glyphicon.glyphicon-chevron-left {:aria-hidden "true"}]
+     [:span.sr-only "Previous"]]
+    [:a.right.carousel-control {:href "#carousel-example-generic" :role "button" :data-slide "next"}
+     [:span.glyphicon.glyphicon-chevron-right {:aria-hidden "true"}]
+     [:span.sr-only "Next"]]]])
+
 (def work-experiences
   [
    {

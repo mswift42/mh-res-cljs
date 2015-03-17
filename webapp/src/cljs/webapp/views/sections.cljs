@@ -51,7 +51,7 @@
     [:ol.carousel-indicators
      [:li.active {:data-target "#carousel-example-generic" :data-slide-to "0"}]
      [:li {:data-target "#carousel-example-generic" :data-slide-to "1"}]]
-    [:div.carousel-inner {:role "listbox"}3
+    [:div.carousel-inner {:role "listbox"}
      [:div.item.active
       [:img {:src "images/metalheadworld1.png"}]]
      [:div.item

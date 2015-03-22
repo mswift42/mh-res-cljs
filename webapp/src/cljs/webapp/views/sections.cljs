@@ -53,15 +53,24 @@
      [:li {:data-target "#carousel-example-generic" :data-slide-to "1"}]]
     [:div.carousel-inner {:role "listbox"}
      [:div.item.active
-      [:img {:src "images/metalheadworld1.png"}]]
+      [:img {:src "images/metalheadworld1.png"}]
+      [:div.carousel-caption
+       [:h3 "MetalHead World and Item Class intitalization"]]]
      [:div.item
-      [:img {:src "images/metalheadworld2.png"}]]]
+      [:img {:src "images/metalheadworld2.png"}]
+      [:div.carousel-caption
+       [:h3 "Example of a Location object."]]]]
     [:a.left.carousel-control {:href "#carousel-example-generic" :role "button" :data-slide "prev"}
      [:span.glyphicon.glyphicon-chevron-left {:aria-hidden "true"}]
      [:span.sr-only "Previous"]]
     [:a.right.carousel-control {:href "#carousel-example-generic" :role "button" :data-slide "next"}
      [:span.glyphicon.glyphicon-chevron-right {:aria-hidden "true"}]
      [:span.sr-only "Next"]]]])
+
+(defn bootcar
+  "helper fn. Takes a map of images and captinos and returns a bootstrap 3
+   carousel for each project."
+  [projects])
 
 (def work-experiences
   [

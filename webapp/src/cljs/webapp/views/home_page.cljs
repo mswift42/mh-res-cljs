@@ -13,7 +13,7 @@
    [:div.ressection
     (views/personalproject-element)]
    [:div.ressection
-    (views/perscar)]
+    (views/metalslide)]
    [:div.ressection
     (views/workexp-element)]
    [:div.ressection

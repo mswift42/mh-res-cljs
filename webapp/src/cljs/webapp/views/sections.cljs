@@ -45,27 +45,13 @@
       [:div.projsummary
        [:p (:summary i)]]])])
 
-(defn perscar []
-  [:div.carou
-   [:div#carousel-example-generic {:class "carousel slide" :data-ride "carousel"}
-    [:ol.carousel-indicators
-     [:li.active {:data-target "#carousel-example-generic" :data-slide-to "0"}]
-     [:li {:data-target "#carousel-example-generic" :data-slide-to "1"}]]
-    [:div.carousel-inner {:role "listbox"}
-     [:div.item.active
-      [:img {:src "images/metalheadworld1.png"}]
-      [:div.carousel-caption
-       [:h3 "MetalHead World and Item Class intitalization"]]]
-     [:div.item
-      [:img {:src "images/metalheadworld2.png"}]
-      [:div.carousel-caption
-       [:h3 "Example of a Location object."]]]]
-    [:a.left.carousel-control {:href "#carousel-example-generic" :role "button" :data-slide "prev"}
-     [:span.glyphicon.glyphicon-chevron-left {:aria-hidden "true"}]
-     [:span.sr-only "Previous"]]
-    [:a.right.carousel-control {:href "#carousel-example-generic" :role "button" :data-slide "next"}
-     [:span.glyphicon.glyphicon-chevron-right {:aria-hidden "true"}]
-     [:span.sr-only "Next"]]]])
+
+
+(defn metalslide []
+  (bootcar [{:image "images/metalheadworld1.png"
+             :caption "Metalhead World and Item Class initialization"}
+            {:image "images/metalheadworld2.png"
+             :caption "Example of a Location object."}]))
 
 (defn bootcar
   "helper fn. Takes a map of images and captinos and returns a bootstrap 3

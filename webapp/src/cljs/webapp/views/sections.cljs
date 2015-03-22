@@ -70,7 +70,31 @@
 (defn bootcar
   "helper fn. Takes a map of images and captinos and returns a bootstrap 3
    carousel for each project."
-  [projects])
+  [projects]
+  (let [[firstproj & restprojects] projects]
+    [:div.carou
+     [:div#projectcarousel {:class "carousel slide" :data-ride "carousel"}
+      [:ol.carousel-indicators
+       [:li.active {:data-target "#projectcarousel" :data-slide-to "0"}]
+       [:lo {:data-target "#projectcarousel" :data-slide-to "1"}]]
+      [:div.carousel-inner {:role "listbox"}
+       [:div.item.active
+        [:img {:src (:image firstproj)}]
+        [:div.carousel-caption
+         [:h3 (:caption firstproj)]]]
+       (for [i restprojects]
+         [:div.item
+          [:img {:src (:image i)}]
+          [:div.carousel-caption
+           [:h3 (:caption i)]]])]
+      [:a.left.carousel-control {:href "#projectcarousel" :role "button"
+                                 :data-slide "prev"}
+       [:span.glyphicon.glyphicon-chevron-left {:aria-hidden "true"}]
+       [:span.sr-only "Previous"]]
+      [:a.right.carousel-control {:href "#projectcarousel" :role "button"
+                                  :data-slide "next"}
+       [:span.glyphicon.glyphicon-chevron-right {:aria-hidden "true"}]
+       [:span.sr-only "Next"]]]]))
 
 (def work-experiences
   [

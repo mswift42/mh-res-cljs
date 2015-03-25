@@ -1,8 +1,8 @@
 (ns webapp.views.nav-bar)
 
 (defn nav-bar [active]
-  [:nav.navbar-default.navbar-fixed-top {:role "navigation"}
-   [:div.container
+  [:nav.navbar.navbar-default.navbar-fixed-top {:role "navigation"}
+   [:div.container-fluid
     [:div.navbar-header
      [:a.navbar-brand {:href "/#"} "Resume"]]
     [:div.navbar-collapse.collapse

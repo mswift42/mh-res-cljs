@@ -4,7 +4,7 @@
    [webapp.views.sections :as views]))
 
 (defn home-page []
-  [:div.container
+  [:div.maincontainer
    (nav-bar "")
    [:div.ressection
     (views/contact-element)]

@@ -53,6 +53,8 @@
             {:image "images/metalheadworld2.png"
              :caption "Example of a Location object."}]))
 
+
+
 (defn bootcar
   "helper fn. Takes a map of images and captinos and returns a bootstrap 3
    carousel for each project."

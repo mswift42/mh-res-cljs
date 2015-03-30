@@ -45,16 +45,6 @@
       [:div.projsummary
        [:p (:summary i)]]])])
 
-
-
-(defn metalslide []
-  (bootcar [{:image "images/metalheadworld1.png"
-             :caption "Metalhead World and Item Class initialization"}
-            {:image "images/metalheadworld2.png"
-             :caption "Example of a Location object."}]))
-
-
-
 (defn bootcar
   "helper fn. Takes a map of images and captinos and returns a bootstrap 3
    carousel for each project."
@@ -83,6 +73,18 @@
                                   :data-slide "next"}
        [:span.glyphicon.glyphicon-chevron-right {:aria-hidden "true"}]
        [:span.sr-only "Next"]]]]))
+
+
+
+(defn metalslide []
+  (bootcar [{:image "images/metalheadworld1.png"
+             :caption "Metalhead World and Item Class initialization"}
+            {:image "images/metalheadworld2.png"
+             :caption "Example of a Location object."}]))
+
+
+
+
 
 (def work-experiences
   [

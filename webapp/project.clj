@@ -29,6 +29,7 @@
   :ring {:handler webapp.handler/app
          :uberwar-name "webapp.war"}
 
+
   :min-lein-version "2.5.0"
 
   :uberjar-name "webapp.jar"

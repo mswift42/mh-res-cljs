@@ -1,19 +1,20 @@
 (ns webapp.views.nav-bar)
 
 (defn nav-bar [active]
-  [:nav.navbar.navbar-default.navbar-fixed-top {:role "navigation"}
-   [:div.container
-    [:div.navbar-header
-     [:a.navbar-brand {:href "/#"} "Resume"]
-     [:button.navbar-toggle.collapsed {:data-target "#navbar" :data-toggle "collapse"
-                                       :aria-expanded "false" :aria-controls "navbar"}
-      [:span.sr-only "Toggle navigation"]
-      [:span.icon-bar]
-      [:span.icon-bar]
-      [:span.icon-bar]]]
-    [:div.navbar-collapse.collapse {:id "navbar"}
+  [:div.fixed
+   [:nav.top-bar {:role "navigation" } 
+    [:ul.title-area
+     [:li.name
+      [:h1
+       [:a {:href "/#"} "Resume"]]]
+     [:li.toggle-topbar.menu-icon
+      [:a {:href "/#"}
+       [:span "Menu"]]]
+     
+     ]
+    [:section.top-bar-section
      (if (= active "about")
-       [:ul.nav.navbar-nav
+       [:ul.left
         [:li
          [:a {:href "#/"} "Home"]]
         [:li.active

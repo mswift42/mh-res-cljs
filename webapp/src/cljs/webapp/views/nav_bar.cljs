@@ -2,7 +2,7 @@
 
 (defn nav-bar [active]
   [:nav.navbar.navbar-default.navbar-fixed-top {:role "navigation"}
-   [:div.container-fluid
+   [:div.container
     [:div.navbar-header
      [:a.navbar-brand {:href "/#"} "Resume"]
      [:button.navbar-toggle.collapsed {:data-target "#navbar" :data-toggle "collapse"

@@ -66,13 +66,20 @@ div.awardcontainer {
 div.years {
     margin-right:2em;
 }
-img {
-    max-width:100%;
-    width:auto;
+.projimg {
+    width:100%;
     height:auto;
-    vertical-align:middle;
+    margin:0 auto;
+}
+               
+    
+.thumb {
+    max-width:60%;
+    width:80%;
+    height:auto;
+ 
     border:0;
-    -ms-interpolation-mode: bicubic;
+ 
 }
 
 .carousel img {
@@ -88,3 +95,8 @@ img {
     margin:0 auto;
 }
                        
+.sectionheader {
+    text-align:center;
+    padding:1em;
+}
+

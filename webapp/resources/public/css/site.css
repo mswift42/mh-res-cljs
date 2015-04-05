@@ -12,8 +12,10 @@ body {
 }
 
 p {
-    font-family:'Roboto', sans-serif;
+    /* font-family:'Roboto', serif; */
     line-height:150%;
+    font-size:120%;
+    font-weight:400;
 }
 
 h1, h2, h3 {
@@ -21,7 +23,7 @@ h1, h2, h3 {
     padding:1em;
     text-align:center;
     font-weight:400;
-    font-family: 'Oxygen', serif;
+    /* font-family: 'Oxygen', serif; */
     font-size:120%;
 }
 h1 {

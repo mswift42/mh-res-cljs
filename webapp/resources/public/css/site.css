@@ -2,18 +2,25 @@ body {
   font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
   margin: 0 auto;
   /* padding-top: 72px; */
+  max-width:1000px;
   padding-top:8vh;
   -webkit-font-smoothing: antialiased;
   font-size: 1.125em;
   color: #333;
   line-height: 1.5em;
   background-color:#fafafa;
-n}
+}
+
+p {
+    font-family:'Roboto', sans-serif;
+    line-height:150%;
+}
 
 h1, h2, h3 {
     color: #000;
     padding:1em;
     text-align:center;
+    font-family: 'Merriweather', serif;
 }
 h1 {
   font-size: 2.5em
@@ -42,6 +49,9 @@ a:hover {
 }
 
 div.ressection {
+    padding:1em;
+    width:100%;
+    margin:0 auto;
 
     
 }
@@ -69,4 +79,8 @@ img {
     max-width:none;
 }
 
+.aboutdesc {
+    width:95%;
+    margin:0 auto;
+}
                        

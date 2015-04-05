@@ -6,19 +6,19 @@
 (defn home-page []
   [:div.maincontainer
    (nav-bar "")
-   [:div.ressection
+   [:div.ressection.container-fluid
     (views/contact-element)]
-   [:div.ressection
+   [:div.ressection.container-fluid
     (views/about-element)]
-   [:div.ressection
+   [:div.ressection.container-fluid
     (views/personalproject-element)]
-   [:div.ressection
+   [:div.ressection.container-fluid
     (views/metalslide)]
-   [:div.ressection
+   [:div.ressection.container-fluid
     (views/workexp-element)]
-   [:div.ressection
+   [:div.ressection.container-fluid
     (views/education-element)]
-   [:div.ressection
+   [:div.ressection.container-fluid
     (views/awards-element)]
-   [:div.ressection
+   [:div.ressection.container-fluid
     (views/skill-element)]])

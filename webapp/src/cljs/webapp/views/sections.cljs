@@ -3,7 +3,7 @@
 (defn contact-element []
   [:div.contact
    [:div.contactheader
-    [:h3 "Martin Haesler"]]
+    [:h3.sectionheader "Martin Haesler"]]
    [:div.contactmail
     [:span "Email:"]
     [:span "martin.haesler@gmail.com"]]
@@ -13,7 +13,7 @@
 
 (defn about-element []
   [:div.aboutelement
-   [:h3 "About"]
+   [:h3.sectionheader "About"]
    [:p "Martin Haesler is a former sales man for plumbing and heating projects, who after 17 years of working in this line of work, decided it was time for a change, see something of the world, and try for a completely different career path. Having always been interested in computer technology, an avid Linux user for many years, he decided on programming as a new career. Martin Haesler is quick to learn new things, self motivated and eager to improve."]])
 
 (def personal-projects 
@@ -33,8 +33,8 @@
 
 (defn personalproject-element []
   [:div.projects
-   [:div.sectionheader
-    [:h3 "Personal Projects"]]
+   [:div
+    [:h3.sectionheader "Personal Projects"]]
    (for [i personal-projects]
      [:div.persprojelement
       [:div.projheader
@@ -112,7 +112,7 @@
 
 (defn workexp-element []
   [:div.workexpelement
-   [:h3 "Work Experience"]
+   [:h3.sectionheader "Work Experience"]
    (for [i work-experiences]
      [:div.workexp
       [:div.companyposition
@@ -143,7 +143,7 @@
 
 (defn education-element []
   [:div.education
-   [:h3 "Education"]
+   [:h3.sectionheader "Education"]
    (for [i educations]
      [:div.educontainer
       [:div.years
@@ -160,7 +160,7 @@
 
 (defn awards-element []
   [:div.awards
-   [:h3 "Awards"]
+   [:h3.sectionheader "Awards"]
    (for [i awards]
      [:div.awardcontainer
       [:div.years
@@ -189,7 +189,7 @@
 
 (defn skill-element []
   [:div.skillcontainer
-   [:h3 "Technical Skills"]
+   [:h3.sectionheader "Technical Skills"]
    (for [i skills]
      [:div#skillsection
       [:div.skillheader

@@ -20,7 +20,7 @@
   <body>
     <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
-    <nav class="tab-bar">
+    <nav class="tab-bar" data-topbar >
       <section class="left-small">
         <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
       </section>
@@ -32,13 +32,13 @@
         <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
         <li><label>Index</label></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About Martin Haesler</a></li>
-        <li><a href="#projects">Personal Projects</a></li>
-        <li><a href="#work">Work Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#skills">Technical Skills</a></li>
+        <li><a href="javascript:document.querySelector('#contact').scrollIntoView()">Contact</a></li>
+        <li><a href="javascript:document.querySelector('#about').scrollIntoView()">About Martin Haesler</a></li>
+        <li><a href="javascript:document.querySelector('#projects').scrollIntoView()">Personal Projects</a></li>
+        <li><a href="javascript:document.querySelector('#work').scrollIntoView()">Work Experience</a></li>
+        <li><a href="javascript:document.querySelector('#education').scrollIntoView()">Education</a></li>
+        <li><a href="javascript:document.querySelector('#awards').scrollIntoView()">Awards</a></li>
+        <li><a href="javascript:document.querySelector('#skills').scrollIntoView()">Technical Skills</a></li>
       </ul>
     </aside>
  <section class="main-section">
@@ -53,6 +53,9 @@
     <script src="js/foundation/foundation.offcanvas.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
     <script>$(document).foundation();</script>
+    <script>$(document).foundation({offcanvas: {
+      close_on_click:true
+     }});;</script>
     <script src="js/app.js" type="text/javascript"></script>
   </body>
 </html>

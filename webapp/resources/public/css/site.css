@@ -114,10 +114,26 @@ body {
     margin-bottom:0vh;
     padding:4px;
 }
+.skillheader h6 {
+    font-size:80%;
+}
 
 @media (min-width:800px) {
     .ressection p {
         margin-left:2em;
         margin-right:2em;
     }
+    .skillheader h6 {
+        font-size:100%;
+    }
 }
+.skills {
+    margin-right:8px;
+}
+
+.skills .label {
+    margin-right:4px;
+    margin-bottom:4px;
+    margin-bottom:4px;
+}
+

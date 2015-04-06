@@ -5,7 +5,6 @@
 
 (defn home-page []
   [:div.maincontainer
-   (nav-bar "")
    [:div.ressection.container-fluid
     (views/contact-element)]
    [:div.ressection.container-fluid

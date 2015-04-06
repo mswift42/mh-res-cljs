@@ -1,26 +1,21 @@
 (ns webapp.views.nav-bar)
 
-(defn nav-bar [active]
-  [:div.fixed
-   [:nav.top-bar {:role "navigation" } 
-    [:ul.title-area
-     [:li.name
-      [:h1
-       [:a {:href "/#"} "Resume"]]]
-     [:li.toggle-topbar.menu-icon
-      [:a {:href "/#"}
-       [:span "Menu"]]]
-     
-     ]
-    [:section.top-bar-section
-     (if (= active "about")
-       [:ul.left
-        [:li
-         [:a {:href "#/"} "Home"]]
-        [:li.active
-         [:a {:href "#/about"} "About"]]]
-       [:ul.nav.navbar-nav
-        [:li.active
-         [:a {:href "#/"} "Home"]]
-        [:li
-         [:a {:href "#/about"} "About"]]])]]])
+(defn nav-bar
+  [active]
+  [:div.off-canvas-wrap {:data-offcanvas ""}
+   [:div.inner-wrap
+    [:nav.tab-bar
+     [:section.left-small
+      [:a.left-off-canvas-toggle.menu-icon {:href "#"}
+       [:span]]]
+     [:section.middle.tab-bar-section
+      [:h1.title "Resume"]]]
+    [:aside.left-off-canvas-menu
+     [:ul.off-canvas-list
+      [:li
+       [:label "Index"]]
+      [:li
+       [:a {:href "/#about"} ]]]]
+    [:section.main-section
+     [:h2 "Content Goes HERE"]]
+    [:a.exit-off-canvas]]])

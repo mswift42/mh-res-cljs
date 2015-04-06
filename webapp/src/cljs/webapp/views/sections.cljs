@@ -121,7 +121,7 @@
        [:div.position.small-6.columns
         [:h4 (:position i)]]]
       [:div.yearssummary.row
-       [:div.years.small-2.columns
+       [:div.years.small-3.columns
         [:p (:years i)]]
        [:div.summary.small-9.columns
         [:p (:worksummary i)]]]])])

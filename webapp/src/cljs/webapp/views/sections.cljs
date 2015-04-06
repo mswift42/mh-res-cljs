@@ -146,10 +146,11 @@
    [:h3.sectionheader "Education"]
    (for [i educations]
      [:div.educontainer
-      [:div.years
-       [:p (:years i)]]
-      [:div.school
-       [:p (:schoolname i)]]])])
+      [:div.row
+       [:div.years.small-4.large-3.columns
+        [:p (:years i)]]
+       [:div.school.small-8.large-7.columns
+        [:p (:schoolname i)]]]])])
 
 (def awards
   [{

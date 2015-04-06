@@ -1,21 +1,20 @@
 (ns webapp.views.home-page
   (:require
-   [webapp.views.nav-bar :refer [nav-bar]]
    [webapp.views.sections :as views]))
 
 (defn home-page []
   [:div.maincontainer
-   [:div.ressection
+   [:div.ressection {:id "contact"}
     (views/contact-element)]
-   [:div.ressection
+   [:div.ressection {:id "about"}
     (views/about-element)]
-   [:div.ressection
+   [:div.ressection {:id "projects"}
     (views/personalproject-element)]
-   [:div.ressection
+   [:div.ressection {:id "work"}
     (views/workexp-element)]
-   [:div.ressection
+   [:div.ressection {:id "education"}
     (views/education-element)]
-   [:div.ressection
+   [:div.ressection {:id "awards"}
     (views/awards-element)]
-   [:div.ressection
+   [:div.ressection {:id "skills"}
     (views/skill-element)]])

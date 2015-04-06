@@ -1,15 +1,27 @@
 (ns webapp.views.sections)
 
 (defn contact-element []
-  [:div.contact
+  [:div.contact.hide-for-medium-up
    [:div.contactheader
-    [:h3.sectionheader "Martin Haesler"]]
-   [:div.contactmail
-    [:span "Email:"]
-    [:span "martin.haesler@gmail.com"]]
-   [:div.contactphone
-    [:p "Phone"]
-    [:p "07858 242169"]]])
+    [:h3.sectionheader "Contact"]
+    [:h6 "Martin Haesler"]]
+   [:div.contactmail.row
+    [:span.small-3.column "Email:"]
+    [:span.small-7.column "martin.haesler@gmail.com"]]
+   [:div.contactphone.row
+    [:p.small-3.column "Phone"]
+    [:p.small-7.column "07858 242169"]]]
+  [:div.contactmed
+   [:div.row
+    [:div.medium-4.column.contactmedheader
+     [:h3.text-center "Contact"]]
+    [:div.medium-7.column.contactdetails
+     [:div.contactmail.row
+      [:h5.medium-offset-1.medium-2.column "Email: "]
+      [:p.medium-6.column "martin.haesler@gmail.com"]]
+     [:div.contactphone.row
+      [:h5.medium-4.column.medphone "Phone:"]
+      [:p.large-5.column.mednum "07858 242169"]]]]])
 
 (defn about-element []
   [:div.aboutelement

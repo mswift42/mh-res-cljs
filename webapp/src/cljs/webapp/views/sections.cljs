@@ -162,10 +162,10 @@
   [:div.awards
    [:h3.sectionheader "Awards"]
    (for [i awards]
-     [:div.awardcontainer
+     [:div.awardcontainer.row
       [:div.years
-       [:p (:year i)]]
-      [:div.awarddesc
+       [:p.small-2.large-1.columns (:year i)]]
+      [:div.small-10.large-10.columns.awarddesc
        [:p (:description i)]]])])
 
 (def skills

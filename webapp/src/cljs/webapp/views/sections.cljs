@@ -196,10 +196,9 @@
   [:div.skillcontainer
    [:h3.sectionheader "Technical Skills"]
    (for [i skills]
-     [:div#skillsection
-      [:div.skillheader
-       [:h4 (:subsection i)]]
-      [:div.skills
+     [:div#skillsection.row
+      [:div.skillheader.small-2.large-4.columns
+       [:h6  (:subsection i)]]
+      [:div.skills.small-8..large-7.columns
        (for [s (:skill i)]
-         [:div.singleskill
-          (skill-label (str s))])]])])
+         (skill-label (str s)))]])])

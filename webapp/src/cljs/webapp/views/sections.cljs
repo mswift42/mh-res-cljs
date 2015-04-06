@@ -33,7 +33,8 @@
 
 (defn personalproject-element []
   [:div.projects
-   [:h3 "Personal Projects"]
+   [:div.sectionheader
+    [:h3 "Personal Projects"]]
    (for [i personal-projects]
      [:div.persprojelement
       [:div.projheader
@@ -41,7 +42,7 @@
       [:div.projurl
        [:a {:href (:url i)} "github url"]]
       [:div.projimg
-       [:img {:src (:pic i)}]]
+       [:img.thumb {:src (:pic i)}]]
       [:div.projsummary
        [:p (:summary i)]]])])
 

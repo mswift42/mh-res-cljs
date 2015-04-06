@@ -12,8 +12,6 @@
    [:div.ressection
     (views/personalproject-element)]
    [:div.ressection
-    (views/metalslide)]
-   [:div.ressection
     (views/workexp-element)]
    [:div.ressection
     (views/education-element)]

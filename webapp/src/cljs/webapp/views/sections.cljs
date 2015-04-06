@@ -187,6 +187,11 @@
    ]
   )
 
+(defn skill-label
+  "wrap skill name in a foundation title"
+  [name]
+  [:span.label.round (str name)])
+
 (defn skill-element []
   [:div.skillcontainer
    [:h3.sectionheader "Technical Skills"]
@@ -197,4 +202,4 @@
       [:div.skills
        (for [s (:skill i)]
          [:div.singleskill
-          [:span s]])]])])
+          (skill-label (str s))])]])])

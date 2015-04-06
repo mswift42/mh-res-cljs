@@ -5,19 +5,19 @@
 
 (defn home-page []
   [:div.maincontainer
-   [:div.ressection.container-fluid
+   [:div.ressection
     (views/contact-element)]
-   [:div.ressection.container-fluid
+   [:div.ressection
     (views/about-element)]
-   [:div.ressection.container-fluid
+   [:div.ressection
     (views/personalproject-element)]
-   [:div.ressection.container-fluid
+   [:div.ressection
     (views/metalslide)]
-   [:div.ressection.container-fluid
+   [:div.ressection
     (views/workexp-element)]
-   [:div.ressection.container-fluid
+   [:div.ressection
     (views/education-element)]
-   [:div.ressection.container-fluid
+   [:div.ressection
     (views/awards-element)]
-   [:div.ressection.container-fluid
+   [:div.ressection
     (views/skill-element)]])

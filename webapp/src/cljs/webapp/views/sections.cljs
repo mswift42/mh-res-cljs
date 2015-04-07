@@ -30,7 +30,7 @@
 
 (def personal-projects 
   [
-   {:name "MetalHead"
+  {:name "MetalHead"
     :url  "https://github.com/mswift42/MetalHead"
     :pic "images/mh1.png"
     :summary "MetalHead is a old school text adventure written in Common Lisp. Every location and items in MetalHead's game world are instances of CLOS class definitions `loc` and `item`, which are inspired by infocom's Zork Implementation Language.The goal of the game is to attend a Metallica concert. This can be achieved by interacting in typical text adventure manner with items and people."}
@@ -48,6 +48,7 @@
    [:div
     [:h3.sectionheader "Personal Projects"]]
    (for [i personal-projects]
+     ^{:key i}
      [:div.persprojelement
       [:div.projheader
        [:h4 (:name i)]]
@@ -126,6 +127,7 @@
   [:div.workexpelement
    [:h3.sectionheader "Work Experience"]
    (for [i work-experiences]
+     ^{:key i}
      [:div.workexp
       [:div.row
        [:div.small-5.large-5.columns
@@ -157,6 +159,7 @@
   [:div.education
    [:h3.sectionheader "Education"]
    (for [i educations]
+     ^{:key i}
      [:div.educontainer
       [:div.row
        [:div.years.small-4.large-3.columns
@@ -175,6 +178,7 @@
   [:div.awards
    [:h3.sectionheader "Awards"]
    (for [i awards]
+     ^{:key i}
      [:div.awardcontainer.row
       [:div.years
        [:p.small-2.large-1.columns (:year i)]]
@@ -209,9 +213,11 @@
   [:div.skillcontainer
    [:h3.sectionheader "Technical Skills"]
    (for [i skills]
+     ^{:key i}
      [:div#skillsection.row
       [:div.skillheader.small-2.large-4.columns
        [:h6  (:subsection i)]]
       [:div.skills.small-8..large-7.columns
        (for [s (:skill i)]
-         (skill-label (str s)))]])])
+         ^{:key s}
+         (skill-label s))]])])

@@ -6,6 +6,8 @@ body {
 }
 .sectionheader {
     text-align:center;
+    margin-bottom:2em;
+    margin-top:1em;
 }
 
 .ressection {
@@ -55,7 +57,20 @@ body {
 .medphone {
     padding-left:3.5em;
 }
-
-
+/* .imagecontainer { */
+/*     width:80%; */
+/*     height:auto; */
+/*     margin:0 auto; */
     
+/* } */
+/* .thumb { */
+/*     width:50%; */
+/*     margin:0 auto; */
+/*     height:auto; */
+/* } */
     
+img {
+    display:block;
+    margin:1em;
+}
+              

@@ -54,8 +54,9 @@
        [:h4 (:name i)]]
       [:div.projurl
        [:a {:href (:url i)} "github url"]]
-      [:div.projimg
-       [:img.thumb {:src (:pic i)}]]
+      [:div.imagecontainer
+       [:div.projimg
+        [:img.thumb {:src (:pic i)}]]]
       [:div.projsummary
        [:p (:summary i)]]])])
 
